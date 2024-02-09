@@ -3,49 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>ConnectKarma</title>
+    <title>Home Page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url(sec.jpg);
+        background-size: cover;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .box {
+        width: 210px;
+        height: 330px;
+        text-align: center;
+        padding-top: 30px;
+        line-height: 1.5;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: background-color 0.2s ease;
+      }
+      div:hover {
+        transform: scale(1.1);
+      }
+
+      .box:nth-child(1) {
+        background-color: #8cc084;
+        color: #fff;
+      }
+
+      .box:nth-child(2) {
+        background-color: #d1a17a;
+        color: #fff;
+      }
+
+      .box:nth-child(3) {
+        background-color: #8cc084;
+        color: #fff;
+      }
+
+      .box:nth-child(4) {
+        background-color: #d1a17a;
+        color: #fff;
+      }
+
+      @media screen and (max-width: 600px) {
+        .box {
+          width: 100%;
+        }
+      }
+    </style>
   </head>
-
   <body>
-    <header>
-      <div class="contain">
-        <h1>VolunteerNGO Connect</h1>
+    <div class="container">
+      <div class="box">
+        Community:Community volunteering builds unity and shared responsibility
+        by actively participating in local initiatives, such as cleanup projects
+        and food banks, fostering resilient and connected neighborhoods.
       </div>
-    </header>
-
-    <section id="volunteer-form">
-      <div class="container">
-        <h2>Volunteer Registration:</h2>
-
-        <form action="#" method="post" id="volunteer-form">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="phone">Phone Number:</label>
-          <input type="tel" id="phone" name="phone" required />
-
-          <label for="location">Location:</label>
-          <input type="text" id="location" name="location" required />
-
-          <label for="education">Educational Background:</label>
-          <input type="text" id="education" name="education" required />
-
-          <label for="skills">Skills:</label>
-          <textarea id="skills" name="skills" rows="4" required></textarea>
-
-          <button type="submit" formaction="second.html">Submit</button>
-        </form>
+      <div class="box">
+        Skill Based:Skill-based volunteering maximizes impact as individuals
+        contribute their specific talents and expertise, addressing targeted
+        needs and promoting knowledge exchange for both volunteers and the
+        communities they serve.
       </div>
-    </section>
-
-    <footer>
-      <div class="container">
-        <p>&copy; 2024 VolunteerNGO Connect</p>
+      <div class="box">
+        <p>
+          Virtual:Virtual volunteering transcends borders, enabling individuals
+          to make a difference remotely through activities like online tutoring
+          or administrative support, providing accessible opportunities for
+          global impact.
+        </p>
       </div>
-    </footer>
+      <div class="box">
+        Paid:Paid volunteering introduces a pragmatic approach, compensating
+        individuals for their time and skills, creating a sustainable balance
+        between social contributions and personal financial needs.
+      </div>
+    </div>
   </body>
 </html>
