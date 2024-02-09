@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  background-color: #49c895;
+  color: #fff;
+  padding: 15px 30px;
+  position: fixed;
+  transform: translateX(-50%);
+  width: 95%;
+  top: 10px;
+  left: 50%;
+  margin: auto;
+  transition: padding 0.7s, background-color 0.3s;
+  border-radius: 50px;
+  z-index: 1000;
+}
+
+#logo {
+  height: 100px;
+  transition: height 0.7s, background-color 0.3s;
+}
+
+#header.shrink {
+  padding: 5px 5px;
+  transition: padding 1s, background-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#logo.shrink {
+  height: 50px;
+  transition: height 1s, background-color 0.3s;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-divider {
+  height: 100px; /* Initial height of the vertical line */
+  width: 1px; /* Width of the vertical line */
+  background-color: #fff;
+  margin-left: auto; /* Push the divider to the right */
+  margin-right: 10px;
+  transition: height 1s; /* Smooth transition for height changes */
+}
+
+.header-buttons button {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  margin-left: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header-buttons button:hover {
+  background-color: #fff;
+  color: #49c895;
+}
+
+.content {
+  padding-top: 150px; /* Adjust according to the height of your header */
+  /* Your content styles */
+}
